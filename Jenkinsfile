@@ -20,7 +20,7 @@ pipeline {
     
     stage('Deploy') {
       steps {
-        echo "Deploying ${params.IMAGE_NAME} to ${DEPLOY_ENV} Environment"
+        echo "Deploying ${params.IMAGE_NAME} to ${params.DEPLOY_ENV} Environment"
       }
     }
   }
