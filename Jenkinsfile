@@ -3,11 +3,11 @@ pipeline {
   stages {
     stage('Approval') {
       steps {
-        input(message: 'Deploy to production?', submitter: 'kubeadmin', ok: 'Deploy')
+        input(message: 'Deploy to production?', submitter: 'kubeadmin')
       }
     }
 
-    stage('error') {
+    stage('Approved') {
       steps {
         sh 'echo "Approved!"'
       }
