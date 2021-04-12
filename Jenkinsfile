@@ -23,4 +23,5 @@ pipeline {
         echo "Deploying ${params.IMAGE_NAME} to ${DEPLOY_ENV} Environment"
       }
     }
+  }
 }
