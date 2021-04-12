@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Approval') {
       steps {
-        input(message: 'Deploy to production?', id: 'Deploy', ok: 'Deploy', submitter: 'kubeadmin')
+        input(message: 'Deploy to production?', id: 'Deploy', submitter: 'kubeadmin')
       }
     }
 
